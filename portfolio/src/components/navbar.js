@@ -34,6 +34,7 @@ function Navbar() {
         sx={{
           height: "52px",
           justifyContent: "center",
+          backgroundColor: "#F2F3F5",
         }}
       >
         <Toolbar
@@ -47,7 +48,7 @@ function Navbar() {
             component="a"
             href="/"
             sx={{
-              color: "white",
+              color: "black",
               textDecoration: "none",
               fontFamily: "Roboto",
               fontWeight: "500",
@@ -67,14 +68,13 @@ function Navbar() {
             {sections.map((section) => (
               <Typography
                 key={section.title}
-                variant="h7"
                 noWrap
                 component="a"
                 href={section.url}
                 sx={{
-                  color: "white",
+                  color: "black",
                   textDecoration: "none",
-                  fontFamily: "Roboto",
+                  fontSize: "0.9em",
                   fontWeight: "500",
                   letterSpacing: "0.05em",
                   marginLeft: "2em",
@@ -99,7 +99,7 @@ function Navbar() {
               color="inherit"
               onClick={handleOpenNavMenu}
             >
-              <MenuIcon />
+              <MenuIcon color="primary" />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -120,14 +120,12 @@ function Navbar() {
               {sections.map((section) => (
                 <MenuItem key={section.title} onClick={handleCloseNavMenu}>
                   <Typography
-                    variant="h7"
                     component="a"
                     href={section.url}
                     sx={{
                       color: "black",
                       textDecoration: "none",
-                      fontFamily: "Roboto",
-                      fontSize: "1.2em",
+                      fontSize: "1.0em",
                     }}
                   >
                     {section.title}

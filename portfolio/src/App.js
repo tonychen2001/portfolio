@@ -1,5 +1,6 @@
 import "./App.css";
 import { Box, Container } from "@mui/material";
+import Intro from "./sections/intro";
 import About from "./sections/about";
 import Experience from "./sections/experience";
 import Project from "./sections/project";
@@ -11,6 +12,7 @@ function App() {
     <Box className="App">
       <Navbar />
       <Container>
+        <Intro />
         <About />
         <Experience />
         <Project />
