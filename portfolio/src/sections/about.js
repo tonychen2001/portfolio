@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/about.css";
 import { Box, Typography } from "@mui/material";
 
 const technologies = [
@@ -22,14 +21,14 @@ function About() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "100vh",
+        minHeight: "100vh",
         pt: "55px",
       }}
     >
       <Typography
-        variant="h1"
+        variant="h2"
         sx={{
-          fontSize: "3rem",
+          fontSize: "3.0rem",
           fontWeight: "500",
         }}
       >
@@ -39,7 +38,8 @@ function About() {
         variant="p"
         sx={{
           mt: "1.0em",
-          px: "10.0em",
+          px: { xs: "0.0em", sm: "3.0em" },
+          maxWidth: "830px",
           textAlign: "center",
         }}
       >
@@ -70,7 +70,7 @@ function About() {
         component="ul"
         sx={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(3, 1fr)" },
           gridRowGap: "0.5em",
           gridColumnGap: "3.5em",
           mt: "0.5em",

@@ -12,7 +12,7 @@ function Intro() {
         gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
         gridGap: "0",
         alignItems: "center",
-        height: "100vh",
+        minHeight: "100vh",
         fontFamily: "Verdana",
       }}
     >
