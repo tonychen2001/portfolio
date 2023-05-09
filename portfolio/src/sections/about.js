@@ -20,27 +20,16 @@ function About() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        minHeight: "100vh",
+        alignItems: "flex-start",
         pt: "55px",
+        mb: "5.0em",
       }}
     >
+      <Typography variant="h2">About</Typography>
       <Typography
-        variant="h2"
-        sx={{
-          fontSize: "3.0rem",
-          fontWeight: "500",
-        }}
-      >
-        About
-      </Typography>
-      <Typography
-        variant="p"
         sx={{
           mt: "1.0em",
-          px: { xs: "0.0em", sm: "3.0em" },
           maxWidth: "830px",
-          textAlign: "center",
         }}
       >
         I am a senior at the University of Toronto pursuing an Honours B.Sc in
@@ -75,6 +64,7 @@ function About() {
           gridColumnGap: "3.5em",
           mt: "0.5em",
           textAlign: "left",
+          pl: "1.0em",
         }}
       >
         {technologies.map((technology) => (

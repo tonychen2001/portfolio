@@ -23,6 +23,11 @@ const theme = createTheme({
     },
     allVariants: {
       textDecoration: "none",
+      textAlign: "start",
+    },
+    h2: {
+      fontSize: "2.5rem",
+      fontWeight: "500",
     },
   },
 });

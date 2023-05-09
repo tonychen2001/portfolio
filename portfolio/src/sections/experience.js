@@ -43,13 +43,12 @@ function Experience() {
       sx={{
         minHeight: "100vh",
         pt: "55px",
+        mb: "5.0em",
       }}
     >
       <Typography
         variant="h2"
         sx={{
-          fontSize: "3.0rem",
-          fontWeight: "500",
           mb: "1.0em",
         }}
       >
@@ -76,6 +75,9 @@ function Experience() {
                 color: "#ffffff",
               }}
               icon={<WorkIcon />}
+              style={{
+                textAlign: "left",
+              }}
             >
               <Typography
                 variant="h3"
@@ -99,18 +101,31 @@ function Experience() {
               >
                 {job.position}
               </Typography>
-              <Typography
-                variant="p"
+              <Box
                 sx={{
                   textAlign: "left",
                 }}
               >
-                <ul>
+                <ul
+                  style={{
+                    paddingLeft: "1.0em",
+                  }}
+                >
                   {job.description.map((point) => {
-                    return <li key={descKey++}>{point}</li>;
+                    return (
+                      <li
+                        key={descKey++}
+                        style={{
+                          textAlign: "left",
+                          lineHeight: "1.3",
+                        }}
+                      >
+                        {point}
+                      </li>
+                    );
                   })}
                 </ul>
-              </Typography>
+              </Box>
             </VerticalTimelineElement>
           );
         })}

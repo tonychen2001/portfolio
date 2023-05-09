@@ -34,7 +34,8 @@ function Navbar() {
         sx={{
           height: "52px",
           justifyContent: "center",
-          backgroundColor: "#F2F3F5",
+          backgroundColor: "#f8f8f8",
+          boxShadow: "none",
         }}
       >
         <Toolbar
