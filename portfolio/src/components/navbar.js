@@ -104,7 +104,7 @@ function Navbar() {
             </IconButton>
             <Menu
               id="menu-appbar"
-              anchorEl={null}
+              anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "top",
                 horizontal: "right",

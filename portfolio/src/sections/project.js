@@ -38,8 +38,8 @@ function Project() {
     <Box
       id="project"
       sx={{
-        minHeight: "100vh",
         pt: "55px",
+        mb: "8.0em",
       }}
     >
       <Typography
