@@ -49,7 +49,7 @@ function Footer() {
     <Box
       id="footer"
       sx={{
-        py: "2em",
+        py: "2.0em",
         backgroundColor: "#eeeeee",
       }}
     >
@@ -64,7 +64,7 @@ function Footer() {
       </Typography>
       <Typography
         sx={{
-          mb: "1.5em",
+          mb: "0.5em",
           textAlign: "center",
           color: "#777",
         }}
@@ -109,6 +109,16 @@ function Footer() {
           </Box>
         ))}
       </Box>
+      <Typography
+        sx={{
+          mt: "1.5em",
+          textAlign: "center",
+          color: "#777",
+          fontSize: "0.8em",
+        }}
+      >
+        Designed & Built by Tony Chen
+      </Typography>
     </Box>
   );
 }
